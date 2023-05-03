@@ -15,7 +15,7 @@ RUN chmod 755 /hdhomerun/etc
 RUN chmod 777 /hdhomerun/video
 RUN chmod 755 /hdhomerun/bin/*
 RUN chmod 744 /hdhomerun/etc/*
-EXPOSE 137 138 139 65001
+EXPOSE 65001
 
 CMD ["/hdhomerun/bin/hdhomerun_start.sh"]
  
