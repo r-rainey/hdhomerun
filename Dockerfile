@@ -1,7 +1,7 @@
 FROM alpine:3.17
 MAINTAINER Roger <roger.rain@gmail.com>
 
-RUN apk add --no-cache wget
+RUN apk add --no-cache curl 
 RUN if [ ! -d /hdhomerun ];then mkdir /hdhomerun; fi
 RUN if [ ! -d /hdhomerun/video ];then mkdir /hdhomerun/video; fi
 RUN if [ ! -d /hdhomerun/etc ];then mkdir /hdhomerun/etc; fi
